@@ -1,0 +1,362 @@
+:root {
+  --main-color: #ffee00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* start gneral */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+li {
+  font-size: 20px;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 50px;
+}
+/* end genral */
+
+/* start landing page */
+.landing-page {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("images/img-01.jpg");
+  background-size: cover;
+  color: rgb(12, 238, 238);
+}
+
+.landing-page .container {
+  margin: 0;
+}
+
+.landing-page .over-lay {
+  background-color: #00000069;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.header-area {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  padding: 20px;
+}
+
+.logo {
+  width: 300px;
+  padding: 13px;
+}
+
+.links {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.links li {
+  display: inline-block;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.introduction-text {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.introduction-text h1 {
+  font-size: 60px;
+}
+
+.introduction-text div {
+  text-align: center;
+}
+
+.introduction-text p {
+  min-width: 650px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.introduction-text span {
+  color: var(--main-color);
+}
+
+.introduction-text span:hover {
+  cursor: pointer;
+}
+/* end landing page */
+
+/* start setting box */
+.fa-gear {
+  width: 30px;
+  padding: 8px 0;
+}
+
+.setting-box {
+  position: fixed;
+  background-color: #fffffffc;
+  z-index: 99;
+  width: 200px;
+  height: 100%;
+  left: -200px;
+}
+
+.setting-box.open {
+  left: 0;
+}
+
+.toggle-settings {
+  position: absolute;
+  right: -30px;
+  background-color: white;
+  text-align: center;
+  top: 100px;
+}
+/* end setting box */
+
+/* start option box */
+.option-box {
+  background-color: rgb(226, 219, 219);
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.option-box h4 {
+  margin-left: 0;
+}
+
+.colors-list {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0 0;
+}
+
+.colors-list li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  left: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.colors-list li.active {
+  opacity: 1;
+}
+
+.colors-list li:first-child {
+  background-color: #ffee00;
+}
+
+.colors-list li:nth-child(2) {
+  background-color: red;
+}
+
+.colors-list li:nth-child(3) {
+  background-color: orange;
+}
+
+.colors-list li:nth-child(4) {
+  background-color: purple;
+}
+
+.option-box span.yes,
+.option-box span.no {
+  width: 55px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.option-box span.yes.active,
+.option-box span.no.active {
+  opacity: 1;
+}
+/* end option box */
+
+/* start about us */
+.about-us .container {
+  background-color: white;
+  display: flex;
+}
+
+.box-info {
+  padding-top: 100px;
+  flex: 1;
+}
+
+.box-info p {
+  line-height: 1.6;
+  font-size: 30px;
+}
+
+.box-image {
+  padding: 20px;
+  flex: 1;
+}
+
+.box-image img {
+  max-width: 100%;
+  height: auto;
+  width: 800px;
+  height: 450px;
+}
+/* end about us */
+
+/* sart skills */
+
+.our-skills {
+  background-color: rgb(226, 198, 161);
+  min-height: 400px;
+}
+
+.skills {
+  padding: 20px 250px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skill-box {
+  background-color: #ffee00;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.skill-name {
+  background-color: #ffee00;
+  padding: 20px;
+  width: 100px;
+}
+
+.skill-progress {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 5px;
+  border-radius: 7px;
+}
+
+.skill-progress .html-progress {
+  position: absolute;
+  background-color: red;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  border-radius: 7px 0 0 7px;
+  text-align: center;
+}
+
+.skill-progress .css-progress {
+  position: absolute;
+  background-color: red;
+  left: 0;
+  top: 0;
+  width: 65%;
+  height: 100%;
+  border-radius: 7px 0 0 7px;
+  text-align: center;
+}
+
+.skill-progress .progress-ratio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* end skills */
+
+/* star gallery */
+.images-box {
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.images-box img {
+  width: calc((100% / 5) - 20px);
+  float: left;
+  cursor: pointer;
+  border: solid 2px palegreen;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* end gallery */
+
+/* start popup image */
+.popup-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2001;
+  top: 0;
+  left: 0;
+  background-color: #000000a6;
+}
+
+.popup-image {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px white;
+}
+
+.popup-image img {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.close-button {
+  position: absolute;
+  color: black;
+  right: -15px;
+  top: -15px;
+  background-color: aqua;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* end popup image */
